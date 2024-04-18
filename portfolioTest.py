@@ -296,10 +296,10 @@ def avgBond8CB2(database, codes, trade_dt):
 
 if __name__ == '__main__':
 
-    obj0 = plusDataExcel(path='/data')
+    obj0 = plusDataExcel(path='data/')
     
-    portfolio0 = portfolioBT(obj, startDate='2017/12/29',
-                            selCBMethod=None, selStkMethod=None, selBondMethod=bondSelect,
+    portfolio0 = portfolioBT(obj0, startDate='2020/12/31',
+                            selCBMethod=None, selStkMethod=None, selBondMethod=None,
                             weightCBMethod=None, weightStkMethod=None, weightBondMethod=None,
                             weightPortMethod={'Bond': 1, 'Stock': 0, 'CB': 0})
     
